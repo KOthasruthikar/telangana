@@ -329,3 +329,5 @@ For support, email support@telanganatourism.com or create an issue in the reposi
 - [ ] AR/VR experiences
 - [ ] Offline support
 - [ ] Push notifications
+# telangana
+>>>>>>> 504c7bdda8c049d724c71a770c21a87a0431a381
