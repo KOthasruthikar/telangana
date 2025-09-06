@@ -44,3 +44,4 @@ fs.writeFileSync('client/vercel.json', JSON.stringify(clientVercelConfig, null, 
 
 console.log('✅ Configuration updated with Railway URL:', RAILWAY_URL);
 console.log('📝 Next: Push changes and redeploy to Vercel');
+

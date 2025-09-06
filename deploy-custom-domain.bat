@@ -53,3 +53,4 @@ if "%OPTION%"=="1" (
 echo 🎉 Deployment configuration complete!
 echo 🌐 Your website will be available at: https://%DOMAIN%
 pause
+

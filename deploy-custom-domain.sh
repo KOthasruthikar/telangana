@@ -70,3 +70,4 @@ esac
 
 echo "🎉 Deployment configuration complete!"
 echo "🌐 Your website will be available at: https://$DOMAIN"
+
