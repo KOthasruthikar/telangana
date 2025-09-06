@@ -1,0 +1,26 @@
+{
+  "name": "telangana-tourism",
+  "version": "1.0.0",
+  "description": "Full-stack website for Telangana tourism",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "start": "cd server && npm start",
+    "deploy": "npm run build && npm run start",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "production": "NODE_ENV=production npm run deploy"
+  },
+  "keywords": ["tourism", "telangana", "travel", "places"],
+  "author": "Telangana Tourism",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

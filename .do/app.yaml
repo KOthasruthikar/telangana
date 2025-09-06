@@ -1,0 +1,35 @@
+name: telangana-tourism
+services:
+- name: frontend
+  source_dir: /client
+  github:
+    repo: your-username/telangana-tourism
+    branch: main
+  run_command: npm start
+  build_command: npm run build
+  environment_slug: node-js
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  routes:
+  - path: /
+  envs:
+  - key: REACT_APP_API_URL
+    value: https://your-backend-url.com/api
+
+- name: backend
+  source_dir: /server
+  github:
+    repo: your-username/telangana-tourism
+    branch: main
+  run_command: npm start
+  build_command: npm install
+  environment_slug: node-js
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  routes:
+  - path: /api
+  envs:
+  - key: MONGODB_URI
+    value: mongodb+srv://sruthikarreddy08:Sruthikar%4011@cluster0.pde0amz.mongodb.net/telangana-tourism
+  - key: NODE_ENV
+    value: production

@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://telangana-tourism-backend-production.up.railway.app/api/$1"
+    }
+  ]
+}
